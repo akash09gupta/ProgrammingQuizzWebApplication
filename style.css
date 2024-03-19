@@ -1,0 +1,90 @@
+body {
+  background-color: #0F1035;
+}
+
+#username {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  color: #3D3B40;
+  font-weight: bolder;
+}
+
+#username::placeholder {
+  color: #171785;
+  font-weight: bolder;
+  background-color: #008787;
+  padding:6px;
+}
+
+#username:hover {
+  border: 4px solid black;
+  background-color: aquamarine;
+}
+
+#password {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  color: #3D3B40;
+  font-weight: bolder;
+}
+#password::placeholder {
+  color: #171785;
+  font-weight: bolder;
+  background-color: #008787;
+  padding:6px;
+}
+
+#password:hover {
+  border: 4px solid black;
+  background-color: aquamarine;
+}
+
+#submit {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  border:4px solid white;
+  color: #171785;
+  font-weight: bolder;
+  background-color: #008787;
+}
+
+a {
+  text-decoration: none;
+}
+
+#submit:hover {
+  background-color: aquamarine;
+}
+
+#logo {
+  /*width: 150px;
+  height: 150px;*/
+  width:200px;
+  height:200px;
+  border: 4px solid #DCF2F1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.container {
+  /*width:400px;
+  height: 800px;*/
+  width:100%;
+  height: 50em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #2d464d; 
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  border: 3px solid white;
+  border-radius: 10px;
+  filter: contrast(50px);
+  color: #DCF2F1;
+}

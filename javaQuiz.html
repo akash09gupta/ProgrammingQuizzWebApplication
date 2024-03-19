@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="javaQuiz.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div id="headline">
+      <h1>Java QUIZ</h1>
+      <hr>
+    </div>
+  </header>
+  <div class="container">
+      <a href="home.html"><button class="home-btn">Home</button></a>
+    </div>
+  <hr>
+  <div class="main-container">
+    <h3 class="questions">Q1• Is JVM is platform independent ?</h3>
+    <input type="radio" name="q1" value="1" id="q1">JVM is platform Dependent<br>
+    <input type="radio" name="q1" value="2">Yes<br>
+    <input type="radio" name="q1" value="3">Both dependent or independent  <br>
+    <h3 class="questions">Q2• Is java portable ?</h3>
+    <input type="radio" name="q2" value="1" id="q2">Yes<br>
+    <input type="radio" name="q2" value="2">No<br>
+    <input type="radio" name="q2" value="3">Java is low level language<br>
+    <h3 class="questions">Q3• Who is invented Java language ?</h3>
+    <input type="radio" name="q3" value="1">Guidovan Rossum<br>
+    <input type="radio" name="q3" value="2" id="q3">James Gosling<br>
+    <input type="radio" name="q3" value="3">Dennis Ritchie<br>
+    <h3 class="questions">Q4• Which of the following is right syntax for printing hello world?</h3>
+    <input type="radio" name="q4" value="1">cout>>"hello world";<br>
+    <input type="radio" name="q4" value="2" id="q4">System.out.print("hello world");<br>
+    <input type="radio" name="q4" value="3">Both<br>
+    <h3 class="questions">Q5• What is the output of this code which given below : </h3>
+    <pre>
+        int a=5;
+        int b=7;
+        int result=a+b;
+        System.out.print("Sum : "+result);
+      </pre>
+    <input type="radio" name="q5" value="3">null<br>
+    <input type="radio" name="q5" value="2" id="q5">Sum : 12<br>
+    <input type="radio" name="q5" value="1">Syntex error<br>
+    <h3 class="questions">Q6• What is the output of this code which given below : </h3>
+    <pre>
+      int num1=5;
+      int num2=0;
+      try {
+        int result=num1/num2;
+        System.out.print("Result : "+result);
+      }
+      catch(ArithmeticException e) {
+        System.out.print("Can't divide by zero");
+      }
+      </pre>
+    <input type="radio" name="q6" value="3">Syntax error<br>
+    <input type="radio" name="q6" value="2">IndexOutOfBoundException<br>
+    <input type="radio" name="q6" value="1">NullPointerException<br>
+    <input type="radio" name="q6" value="1" id="q6">Can't divide by zero<br>
+    <h3 class="questions">Q7• What is the output of this code which given below : </h3>
+  <pre>
+    String name="Java";
+    System.out.print(name.charAt(2));
+      </pre>
+    <input type="radio" name="q7" value="3">syntex error<br>
+    <input type="radio" name="q7" value="2">null<br>
+    <input type="radio" name="q7" value="1" id="q7">Output : v
+    <br>
+    <h3 class="questions">Q8• What is the output of this code which given below : </h3>
+<pre>
+  int arr[5]={1,2,3,4,5};
+  System.out.print(arr[4]);
+</pre>
+    <input type="radio" name="q8" value="3">Syntax error<br>
+    <input type="radio" name="q8" value="2" id="q8">Output : 5<br>
+    <input type="radio" name="q8" value="1">null<br>
+    <h3 class="questions">Q9• What is the output of this code which given below : </h3>
+    <pre>
+      int arr[5]={1,2,3,4,5};
+      System.out.print("%d",arr[0]);
+      </pre>
+    <input type="radio" name="q9" value="3">null<br>
+    <input type="radio" name="q9" value="2">Output : 2<br>
+    <input type="radio" name="q9" value="1" id="q9">Output : 1<br>
+    <h3 class="questions">Q10• What is the output of this code which given below : </h3>
+    <pre>
+      String name="Akash";
+      System.out.print(name);
+      </pre>
+    <input type="radio" name="q10" value="
+    <input type="radio" name="q10" value="3">null<br>
+    <input type="radio" name="q10" value="2" id="q10">Output : Akash<br>
+    <input type="radio" name="q10" value="1">Syntex error<br>
+    <p id="sc">Your Score : 0</p>
+    <hr id="hr-bottom">
+    <div class="container2">
+    <h4>Submit Your Quiz</h4>
+    <button onclick="scored() "class="submit-btn">Submit</button>
+    </div>
+  </div>
+  <footer>
+    <h6>Made by Developer Akash</h6>
+  </footer>
+</body>
+<script type="text/javascript">
+  function scored() {
+    var q1 = document.getElementById("q1").checked;
+    var q2 = document.getElementById("q2").checked;
+    var q3 = document.getElementById("q3").checked;
+    var q4 = document.getElementById("q4").checked;
+    var q5 = document.getElementById("q5").checked;
+    var q6 = document.getElementById("q6").checked;
+    var q7 = document.getElementById("q7").checked;
+    var q8 = document.getElementById("q8").checked;
+    var q9 = document.getElementById("q9").checked;
+    var q10 = document.getElementById("q10").checked;
+    var score = 0;
+    if (q1) {
+      score += 1;
+    }
+    if (q2) {
+      score += 1;
+    }
+    if (q3) {
+      score += 1;
+    }
+    if (q4) {
+      score += 1;
+    }
+    if (q5) {
+      score += 1;
+    }
+    if (q6) {
+      score += 1;
+    }
+    if (q7) {
+      score += 1;
+    }
+    if (q8) {
+      score += 1;
+    }
+    if (q9) {
+      score += 1;
+    }
+    if (q10) {
+      score += 1;
+    }
+    alert("Youre Score : " + score);
+    var score2=document.getElementById("sc");
+    
+      score2.innerText="Your Score : "+score;
+  }
+  
+</script>
+
+</html>

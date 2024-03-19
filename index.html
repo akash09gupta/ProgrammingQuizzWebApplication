@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="myphoto2.jpg" id="logo"/>
+    <h1 id="headline">Programming Quizes made by Akash</h1>
+    <h1 id="login">Login your Account</h1>
+    <input type="text" placeholder="Enter Username" id="username" />
+    <input type="password" placeholder="Enter Password" id="password" />
+    <a id="ak"><button onclick="check()" id="submit">Submit</button></a>
+  </div>
+</body>
+<script type="text/javascript">
+  function check() {
+    var username = document.getElementById('username').value.trim();
+    let U=username.toLowerCase();
+    var password = document.getElementById('password').value.trim();
+    let P=password.toLowerCase();
+    var status;
+
+    if (U === "root" && P === "akash") {
+      status = "Successfully Login";
+      let sub = document.getElementById('ak');
+      sub.href='home.html';
+    }
+    else {
+      status = "You entered wrong credentials";
+      /*let v = document.querySelector("#ak");
+      v.disabled = true;*/
+    }
+
+    alert(status);
+  }
+</script>
+
+</html>

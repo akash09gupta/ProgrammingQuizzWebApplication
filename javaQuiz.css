@@ -1,0 +1,217 @@
+/*#navbar {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 30px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+a {
+  color: white;
+  margin-right: 30px;
+  align-items: center;
+  text-decoration: none;
+}
+
+#home {
+  margin-left: 30px;
+}
+
+#home:hover {
+  border: 2px solid white;
+}
+
+#account:hover {
+  border: 2px solid white;
+}
+
+#score:hover {
+  border: 2px solid white;
+}
+
+#help:hover {
+  border: 2px solid white;
+}
+
+h1 {
+  color: #0099ff;
+  text-align: center;
+  font-family: monospace;
+}
+
+footer {
+  background-color: black;
+  color: #7752FE;
+  text-align: center;
+}
+
+body {
+  background-image:
+    url("bomb.jpg");
+  background-size: contain;
+}
+
+.papa {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+}
+
+#myphoto {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f0f0f0;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 50%;
+  background-image: url("myphoto.jpg");
+  background-size: cover;
+  color: red;
+  margin-left: 25px;
+}
+
+#myphoto:hover {
+  border: 4px solid black;
+  animation: ani2 4s linear infinite;
+}
+
+p {
+  font-family: monospace;
+  width: 100px;
+  margin-left: 70px;
+  margin-bottom: 100px;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 0px;
+  background-color: orange;
+  border-color: #3b3bff;
+  border-width: 3px;
+  border-radius: 5px;
+  animation-name: animate;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes animate {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: #e5dcdc;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h3 {
+  font-weight: bold;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+#headline {
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-family: serif;
+  font-weight:bolder;
+}
+.container {
+  width: 100%;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-btn {
+  width: 90px;
+  height:30px;
+  background-color: #7D0A0A;
+  color: #fff;
+  font-weight: bolder;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.home-btn:hover {
+  background-color: darkgreen;
+  border: 2px solid aqua;
+}
+
+.main-container {
+  width:100%;
+  height:100%;
+  color: #fff;
+}
+
+.questions {
+  font-size: 1em;
+  margin: 10px;
+}
+
+input {
+  margin-left: 10px;
+}
+
+pre {
+  margin: 10px;
+  font-weight: bolder;
+}
+.container2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit-btn { 
+  width: 70%;
+  height:30px;
+  background-color: #7D0A0A;
+  color: #fff;
+  font-weight: bolder;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#hr-bottom {
+  margin-top: 20px;
+}
+
+hr {
+  border: 3px solid #fff;
+}
+#sc { 
+  color: red;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
